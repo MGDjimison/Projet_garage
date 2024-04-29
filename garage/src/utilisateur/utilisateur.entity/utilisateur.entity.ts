@@ -14,7 +14,7 @@ export class Utilisateur {
     prenom:string;
 
     @Column({ length: 45 })
-    email:string;
+    username:string;
 
     @Column({ length: 200 })
     motDePasse:string;

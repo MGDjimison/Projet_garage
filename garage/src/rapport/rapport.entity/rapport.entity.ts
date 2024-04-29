@@ -10,8 +10,8 @@ export class Rapport {
     @Column({ length: 1000 })
     contenu:string;
 
-    @Column()
-    peutRouler: boolean
+    @Column({ length: 1 })
+    resultat: string
 
     @OneToOne(() => Controle)
     @JoinColumn()

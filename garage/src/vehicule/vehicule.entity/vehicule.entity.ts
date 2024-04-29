@@ -1,6 +1,7 @@
-import { Controle } from 'src/controle/controle.entity/controle.entity';
+//import { Controle } from 'src/controle/controle.entity/controle.entity';
 import { Utilisateur } from 'src/utilisateur/utilisateur.entity/utilisateur.entity';
 import { Column, PrimaryGeneratedColumn, OneToMany, Entity, ManyToOne } from 'typeorm';
+import {Controle} from "../../controle/controle.entity/controle.entity";
 
 @Entity()
 export class Vehicule {
