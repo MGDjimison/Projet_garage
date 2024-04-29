@@ -6,7 +6,6 @@ import { ControleModule } from './controle/controle.module';
 import { VehiculeModule } from './vehicule/vehicule.module';
 import { RapportModule } from './rapport/rapport.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [TypeOrmModule.forRoot({
@@ -17,7 +16,7 @@ import { AuthModule } from './auth/auth.module';
     "password": "",
     "database": "garage",
     "entities": ["dist//**/**.entity{.ts,.js}"],
-    "synchronize": true}), UtilisateurModule, ControleModule, VehiculeModule, RapportModule, AuthModule],
+    "synchronize": true}), UtilisateurModule, ControleModule, VehiculeModule, RapportModule],
   controllers: [AppController],
   providers: [AppService],
 })
